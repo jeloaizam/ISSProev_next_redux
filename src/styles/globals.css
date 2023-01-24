@@ -1,3 +1,23 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+@layer components{
+    .marker{
+        font-family: 'Permanent Marker', cursive;
+    }
+    .button_menu_2{
+        @apply h-10 w-2/3 mt-0.5 pl-60 bg-gradient-to-r from-[#221372] to-[#122246] text-2xl text-white marker text-left border-t-4 border-[#413d91]
+    }
+    .btn {
+        -ms-transform: skewX(-45deg); /* IE 9 */
+        -webkit-transform: skewX(-45deg); /* Safari */
+        transform: skewX(-45deg);
+    }
+    
+    .btn-text {
+        -ms-transform: skewX(45deg); /* IE 9 */
+        -webkit-transform: skewX(45deg); /* Safari */
+        transform: skewX(45deg);
+    }
+}
