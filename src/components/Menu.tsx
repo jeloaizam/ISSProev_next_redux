@@ -1,30 +1,35 @@
 import Link from 'next/link'
 import React from 'react'
+import { motion } from 'framer-motion'
 
 export default function Menu() {
   return (
-    <div className='flex flex-col pt-5 text-left translate-x-[-3rem]'>
+    <motion.div
+    initial={{opacity:0}}
+    whileInView={{opacity:1}}
+    transition={{duration:3}}
+    className='flex flex-col pt-5 text-left translate-x-[-3rem]'>
         <Link href="#about">
-            <button className='button_menu_2 btn'><div className="btn-text" >Match Mode</div></button>
+            <button className='mt-2 button_menu_2 button_menu_2_animation btn'><div className="btn-text popins" >Match Mode</div></button>
         </Link>
         <Link href="#about">
-            <button className='button_menu_2 btn'><div className="btn-text" >League Mode</div></button>
+            <button className='mt-2 button_menu_2 button_menu_2_animation btn'><div className="btn-text popins" >League Mode</div></button>
         </Link>
         <Link href="#about">
-            <button className='button_menu_2 btn'><div className="btn-text" >Cup Mode</div></button>
+            <button className='mt-2 button_menu_2 button_menu_2_animation btn'><div className="btn-text popins" >Cup Mode</div></button>
         </Link>
         <Link href="#about">
-            <button className='button_menu_2 btn'><div className="btn-text" >Master League</div></button>
+            <button className='mt-2 button_menu_2 button_menu_2_animation btn'><div className="btn-text popins" >Master League</div></button>
         </Link>
         <Link href="#about">
-            <button className='button_menu_2 btn'><div className="btn-text" >Practice Mode</div></button>
+            <button className='mt-2 button_menu_2 button_menu_2_animation btn'><div className="btn-text popins" >Practice Mode</div></button>
         </Link>
         <Link href="#about">
-            <button className='button_menu_2 btn'><div className="btn-text" >Game Options</div></button>
+            <button className='mt-2 button_menu_2 button_menu_2_animation btn'><div className="btn-text popins" >Game Options</div></button>
         </Link>
         <Link href="#about">
-            <button className='button_menu_2 btn'><div className="btn-text" >Information</div></button>
+            <button className='mt-2 button_menu_2 button_menu_2_animation btn'><div className="btn-text popins" >Information</div></button>
         </Link>
-    </div>
+    </motion.div>
   )
 }

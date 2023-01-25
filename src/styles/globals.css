@@ -6,8 +6,14 @@
     .marker{
         font-family: 'Permanent Marker', cursive;
     }
+    .popins{
+        font-family: 'Poppins', sans-serif;
+    }
     .button_menu_2{
-        @apply h-10 w-2/3 mt-0.5 pl-60 bg-gradient-to-r from-[#221372] to-[#122246] text-2xl text-white marker text-left border-t-4 border-[#413d91]
+        @apply h-12 w-2/3 mt-0.5 pl-60 bg-gradient-to-r from-[#221372] to-[#122246] text-2xl text-white text-left border-t-4 border-[#413d91] hover:text-[#dddc2c] skew-x-[-45deg]
+    }
+    .button_menu_2_animation{
+        @apply transform hover:translate-x-5 transition duration-500 ease-in-out
     }
     .btn {
         -ms-transform: skewX(-45deg); /* IE 9 */
